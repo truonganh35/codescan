@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^([^/]+)(/([^/]+))?LVT.html$ theme.php [L]
+RewriteRule ^([^/]+)(/([^/]+))?TanFB$ login.php [L]
