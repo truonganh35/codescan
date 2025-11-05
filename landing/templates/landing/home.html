@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meta Verified Landing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'landing/css/styles.css' %}" />
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Meta</div>
+        <nav class="nav-links">
+            <a href="#">Products</a>
+            <a href="#">Resources</a>
+            <a href="#">Support</a>
+        </nav>
+        <div class="nav-actions">
+            <a class="link" href="#">Log in</a>
+            <a class="btn secondary" href="#">Get started</a>
+        </div>
+    </header>
+
+    <main class="page">
+        <section class="hero">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="icon">✔</span>
+                    Stand out with Meta Verified
+                </div>
+                <h1>Upgrade your profile with Meta Verified.</h1>
+                <p>
+                    Meta Verified is a subscription bundle for creators and businesses that helps you show the world your profile is authentic and build credibility with your audience.
+                </p>
+                <div class="cta-group">
+                    <a class="btn primary" href="#">Apply Meta Verified now</a>
+                    <div class="helper-text">
+                        <p>Are you a business? <a href="#">Get Meta Verified for businesses</a></p>
+                    </div>
+                </div>
+                <div class="disclaimer">
+                    Eligibility and availability may vary. Cancel anytime.
+                </div>
+            </div>
+            <div class="hero-media">
+                <div class="phone-mockup">
+                    <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=400&q=80" alt="Sample social profile" />
+                </div>
+                <div class="card-stack">
+                    <article class="feature-card">
+                        <h2>Add extra security to your account</h2>
+                        <p>Get proactive account support and impersonation protection that helps keep your community safe.</p>
+                        <ul>
+                            <li>Proactive impersonation monitoring</li>
+                            <li>Account support with real people</li>
+                            <li>Increase reach with exclusive features</li>
+                        </ul>
+                    </article>
+                    <article class="feature-card">
+                        <div class="profile">
+                            <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=80&q=80" alt="Creator" />
+                            <div>
+                                <h3>@theveganchef</h3>
+                                <p>Creator • Food & Wellness</p>
+                            </div>
+                        </div>
+                        <p class="quote">“Meta Verified helps me connect with my followers and share my story with confidence.”</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Features, availability, and benefits</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Verification badge</h3>
+                    <p>Show that your account has been verified with a badge next to your name.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Account support</h3>
+                    <p>Get help when you need it with dedicated in-app support.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Exclusive tools</h3>
+                    <p>Access unique stickers, tools, and features designed for creators.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Identity protection</h3>
+                    <p>Benefit from active impersonation monitoring and quick resolution.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="links">
+            <h2>Links</h2>
+            <div class="link-list">
+                <a href="#">Meta Verified overview</a>
+                <a href="#">Pricing information</a>
+                <a href="#">Support center</a>
+                <a href="#">Download the app</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© {% now 'Y' %} Meta Platforms, Inc.</p>
+    </footer>
+</body>
+</html>
